@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>SınavGo Gizlilik Politikası</title>
+<meta name="description" content="SınavGo mobil uygulamasının gizlilik politikası ve KVKK aydınlatma metni.">
+<!-- Bu sayfa bilerek hiçbir dış kaynak (yazı tipi, betik, sayaç, çerez)
+     yüklemez. Uygulamanın gerçek davranışıyla birebir uyumlu tutulmalıdır:
+     docs/privacy/README.md -->
+<style>
+  :root {
+    --bg: #fbf8ff;
+    --surface: #ffffff;
+    --ink: #2a1a40;
+    --ink-soft: #5b4a72;
+    --line: #e7def3;
+    --accent: #c2187a;
+    --accent-soft: #fde7f3;
+    --note: #f3edff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #17111f;
+      --surface: #211a2c;
+      --ink: #f1eaff;
+      --ink-soft: #c5b8d9;
+      --line: #3a2f4a;
+      --accent: #ff7ac3;
+      --accent-soft: #3d1f33;
+      --note: #2a2238;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  header { margin-bottom: 28px; }
+  .brand { font-weight: 800; font-size: 15px; letter-spacing: .02em; color: var(--accent); }
+  h1 { font-size: 30px; line-height: 1.25; margin: 6px 0 8px; }
+  .meta { color: var(--ink-soft); font-size: 14px; margin: 0; }
+  h2 {
+    font-size: 20px; line-height: 1.35; margin: 36px 0 10px;
+    padding-top: 18px; border-top: 1px solid var(--line);
+  }
+  h3 { font-size: 17px; margin: 22px 0 6px; }
+  p, li { color: var(--ink); }
+  ul, ol { padding-left: 22px; }
+  li { margin: 4px 0; }
+  a { color: var(--accent); }
+  .summary {
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: 16px; padding: 18px 20px; margin: 20px 0;
+  }
+  .summary h2 { border: 0; margin-top: 0; padding-top: 0; }
+  .note {
+    background: var(--note); border-radius: 12px; padding: 12px 16px; margin: 14px 0;
+    color: var(--ink-soft); font-size: 15px;
+  }
+  .table-wrap { overflow-x: auto; margin: 12px 0; }
+  table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: 15px; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+  th { background: var(--surface); font-weight: 700; }
+  mark { background: var(--accent-soft); color: var(--ink); padding: 0 4px; border-radius: 4px; }
+  footer { margin-top: 48px; color: var(--ink-soft); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <div class="brand">SınavGo · Tombolo</div>
+  <h1>Gizlilik Politikası ve KVKK Aydınlatma Metni</h1>
+  <p class="meta">Yürürlük tarihi: 19 Kasım 2026 · Sürüm 1.0</p>
+</header>
+
+<p>Bu metin, Google Play'de yayımlanan <strong>SınavGo</strong> mobil uygulamasını
+(“Uygulama”) kullanırken kişisel verilerinin nasıl işlendiğini anlatır. 6698 sayılı
+Kişisel Verilerin Korunması Kanunu (“KVKK”) kapsamındaki aydınlatma yükümlülüğünü
+yerine getirmek ve Google Play'in kullanıcı verisi kurallarına uymak için
+hazırlanmıştır.</p>
+
+<section class="summary" aria-labelledby="ozet">
+  <h2 id="ozet">Kısaca</h2>
+  <ul>
+    <li><strong>Üyelik yok.</strong> Ad, e-posta, telefon numarası ya da şifre istemiyoruz.</li>
+    <li><strong>Notların ve bütün kayıtların yalnızca senin telefonunda durur.</strong> Sunucumuz yok; bu kayıtları biz göremeyiz.</li>
+    <li>Ücretsiz sürümdeki reklamlar için <strong>Google AdMob</strong>, ödemeler için <strong>Google Play</strong> kullanılır.</li>
+    <li><strong>Kullanım istatistikleri</strong> (Firebase Analytics) ve <strong>kişiselleştirilmiş reklamlar</strong> yalnızca sen açıkça izin verirsen açılır. İzin vermesen de Uygulamanın her özelliği çalışır.</li>
+    <li>İzinlerini istediğin zaman <em>Profil → Ayarlar</em> bölümünden değiştirebilir, bütün verilerini <em>Tüm verileri sıfırla</em> ile silebilirsin.</li>
+  </ul>
+</section>
+
+<h2 id="sorumlu">1. Veri sorumlusu ve iletişim</h2>
+<p>KVKK kapsamında veri sorumlusu, Uygulamayı “Tombolo” markasıyla yayımlayan
+<mark>[AD SOYAD]</mark>'dır (“biz”). Bu politika ya da kişisel verilerinle ilgili
+her soru ve talebin için bize şu adresten ulaşabilirsin:
+<mark>[E-POSTA ADRESİ]</mark></p>
+
+<h2 id="cihaz">2. Yalnızca telefonunda kalan bilgiler</h2>
+<p>Uygulamaya girdiğin aşağıdaki bilgiler yalnızca telefonundaki Uygulama
+klasöründe saklanır. Bize ya da başka bir şirkete <strong>gönderilmez</strong>,
+bunlara erişimimiz yoktur:</p>
+<ul>
+  <li>Rumuz, seçtiğin sınav, hedef puan/net, profil avatarı ya da kendi seçtiğin profil fotoğrafı;</li>
+  <li>notlar ve notlara eklediğin fotoğraflar;</li>
+  <li>kronometre, geri sayım ve Pomodoro kayıtları, konu takibi işaretleri;</li>
+  <li>soru hedefleri, hedef hatırlatıcıları, takvim planları, deneme sonuçları, çalışma serisi;</li>
+  <li>Atölye kartları ve haritaları, hoca ve kaynak listelerin;</li>
+  <li>görünüm ve izin tercihlerin, hangi ürünü satın aldığına dair cihazdaki kopya.</li>
+</ul>
+<p>Bu bilgileri istediğin zaman Uygulama içinden değiştirebilir ya da silebilirsin.
+Uygulamayı kaldırdığında da telefonundan silinirler.</p>
+<div class="note"><strong>Android yedeklemesi:</strong> Telefonunda Android'in kendi
+yedekleme özelliği açıksa Android, Uygulamanın verilerini senin Google hesabındaki
+yedeğe ekleyebilir ve yeni telefonda geri yükleyebilir. Bu, Google'ın senin
+hesabında sunduğu bir hizmettir; bu yedeğe biz erişemeyiz. Telefonunun
+<em>Ayarlar → Google → Yedekleme</em> bölümünden açıp kapatabilirsin.</div>
+
+<h2 id="hizmetler">3. Üçüncü taraf hizmetler ve paylaşılan veriler</h2>
+<p>Uygulama aşağıdaki Google hizmetlerini kullanır. Bu hizmetler çalışırken bazı
+bilgiler doğrudan telefonundan Google'a gider. Bunları biz seçmeyiz ve
+kişi bazında göremeyiz; Google bu bilgileri kendi gizlilik politikasına göre
+işler ve bazı amaçlar için kendisi de veri sorumlusudur.</p>
+
+<h3>3.1 Google AdMob (reklamlar)</h3>
+<p>Ücretsiz sürümde reklam gösterilir. <strong>Premium</strong> ya da
+<strong>Reklamları Kaldır</strong> satın aldıysan reklam gösterilmez ve AdMob'a
+reklam isteği gönderilmez.</p>
+<ul>
+  <li><strong>Gönderilebilecek bilgiler:</strong> Android reklam kimliği, IP adresi (ve
+  ondan çıkarılan yaklaşık konum, ör. ülke/şehir), cihaz modeli, işletim sistemi ve
+  dil, uygulama sürümü, reklamın gösterilmesi ve tıklanması gibi reklam etkileşimleri,
+  hata ve performans bilgileri.</li>
+  <li><strong>Amaç:</strong> reklamı göstermek, kaç kez gösterildiğini sınırlamak,
+  reklam performansını ölçmek, sahte tıklama ve kötüye kullanımı önlemek.</li>
+  <li><strong>Kişiselleştirilmiş reklam:</strong> İlgi alanlarına göre seçilen reklamlar
+  <em>yalnızca açık iznin varsa</em> istenir. İzin vermezsen reklamlar
+  <em>kişiselleştirilmemiş</em> olarak istenir. Bu durumda da Google yukarıdaki
+  bilgileri reklamı göstermek, sıklığı sınırlamak, ölçüm yapmak ve kötüye kullanımı
+  önlemek için kullanabilir.</li>
+  <li>Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'den kullananlara Google'ın
+  kendi izin formu ayrıca gösterilebilir.</li>
+  <li>Telefonun destekliyorsa Google, Android'in reklam gizliliği özelliklerini
+  (ör. “reklam konuları”, reklam ölçümü) de kullanabilir. Bunları telefonunun reklam
+  gizliliği ayarlarından yönetebilirsin.</li>
+  <li>Reklam kimliğini telefonunun <em>Ayarlar → Gizlilik → Reklamlar</em>
+  (ya da <em>Ayarlar → Google → Reklamlar</em>) bölümünden sıfırlayabilir ya da
+  silebilirsin.</li>
+  <li>Ayrıntılar: <a href="https://policies.google.com/technologies/partner-sites?hl=tr">Google'ın, iş ortaklarının site ve uygulamalarındaki verileri nasıl kullandığı</a>,
+  <a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a>.</li>
+</ul>
+
+<h3>3.2 Firebase Analytics (kullanım istatistikleri) — yalnızca iznin varsa</h3>
+<p>Uygulamayı geliştirmek için, <strong>yalnızca açık izin verirsen</strong>
+Google'ın Firebase Analytics hizmeti kullanılır. İzin vermezsen hiçbir istatistik
+gönderilmez.</p>
+<ul>
+  <li><strong>Gönderilen bilgiler:</strong> Uygulamanın bu kurulumuna özel, rastgele
+  oluşturulan bir kimlik (uygulama örneği kimliği); cihaz modeli, işletim sistemi, dil
+  ve yaklaşık ülke/bölge; uygulama sürümü; Uygulamanın Google Play'den hangi yolla
+  yüklendiği (yükleme kaynağı); açılış ve oturum süresi; hangi ekranların ve
+  özelliklerin kullanıldığı (ör. “premium penceresi açıldı”, “satın alma tamamlandı /
+  iptal edildi”).</li>
+  <li><strong>Gönderilmeyenler:</strong> Notların, fotoğrafların, rumuzun, sınav
+  sonuçların ya da yazdığın hiçbir metin. Android reklam kimliği Firebase Analytics'e
+  gönderilmez ve bu veriler reklam kişiselleştirmesi için kullanılmaz.</li>
+  <li><strong>Amaç:</strong> hangi özelliklerin kullanıldığını toplu olarak görmek,
+  hataları ve sorunlu ekranları bulmak, Uygulamayı geliştirmek. Sonuçları yalnızca
+  toplu raporlar olarak görürüz.</li>
+  <li><strong>Saklama:</strong> Kullanıcı düzeyindeki istatistik verileri Firebase'de
+  en fazla 2 ay tutulur. Toplu (kişiyle ilişkilendirilmeyen) raporlar daha uzun
+  kalabilir.</li>
+  <li>İzni <em>Profil → Ayarlar → Kullanım istatistikleri</em> anahtarından istediğin
+  zaman geri alabilirsin; geri aldığın andan itibaren gönderim durur.</li>
+  <li>Ayrıntılar: <a href="https://firebase.google.com/support/privacy?hl=tr">Firebase gizlilik ve güvenlik</a>.</li>
+</ul>
+
+<h3>3.3 Google Play (satın almalar)</h3>
+<ul>
+  <li><strong>Premium</strong> ve <strong>Reklamları Kaldır</strong> tek seferlik
+  satın almalardır ve tamamen Google Play üzerinden yapılır. Kart ya da ödeme
+  bilgilerin bize hiç ulaşmaz.</li>
+  <li>Uygulama, hangi ürüne sahip olduğunu öğrenmek için telefonundaki Google Play'e
+  sorar ve sonucu yalnızca telefonunda saklar.</li>
+  <li>Google Play, satış ve iadeleri yönetebilmemiz için geliştirici panelinde bize
+  sipariş numarası, ürün, tarih, tutar ve ülke gibi sipariş bilgilerini gösterebilir.
+  Bunları yalnızca satın alma, iade ve destek işlemleri ile yasal (ör. vergi)
+  yükümlülüklerimiz için kullanırız.</li>
+  <li>Ödeme sırasında Google'a verdiğin bilgiler Google'ın kendi gizlilik koşullarına
+  (Google Gizlilik Politikası ve Google Payments Gizlilik Bildirimi) tabidir.</li>
+</ul>
+
+<h3>3.4 Google Play'in hata raporları</h3>
+<p>Telefonunda tanılama verilerinin Google ile paylaşılmasına izin verdiysen Google
+Play, Uygulama çöktüğünde ya da yanıt vermediğinde bize kişiyle ilişkilendirilmemiş
+teknik hata raporları (cihaz modeli, Android sürümü, hatanın yeri gibi) gösterebilir.
+Bunları yalnızca hataları düzeltmek için kullanırız.</p>
+
+<h3>3.5 Dış bağlantılar ve görseller</h3>
+<p>Hocalar ve Kaynaklar sayfasındaki bağlantılar YouTube'u ya da ilgili internet
+sitesini Uygulamanın dışında açar; oradaki işlemler o sitenin kendi gizlilik
+politikasına tabidir. Uygulama bazı görselleri (ör. öğretmen kanal resimleri) Google
+/ YouTube sunucularından yükleyebilir; bu sırada IP adresin ve standart bağlantı
+bilgilerin bu sunuculara iletilir.</p>
+
+<h2 id="tablo">4. Amaçlar ve hukuki sebepler</h2>
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr><th>İşleme</th><th>Amaç</th><th>Hukuki sebep (KVKK m. 5)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Kişiselleştirilmemiş reklam (AdMob)</td><td>Ücretsiz sürümün reklam geliriyle sunulması, ölçüm ve kötüye kullanımın önlenmesi</td><td>Meşru menfaat (m. 5/2-f)</td></tr>
+    <tr><td>Kişiselleştirilmiş reklam (AdMob)</td><td>İlgi alanına göre reklam</td><td>Açık rıza (m. 5/1)</td></tr>
+    <tr><td>Kullanım istatistikleri (Firebase Analytics)</td><td>Uygulamanın geliştirilmesi, hataların bulunması</td><td>Açık rıza (m. 5/1)</td></tr>
+    <tr><td>Satın alma ve sipariş bilgileri (Google Play)</td><td>Satın alınan hakkın verilmesi, iade ve destek</td><td>Sözleşmenin kurulması ve ifası (m. 5/2-c); vergi vb. yasal yükümlülükler (m. 5/2-ç)</td></tr>
+    <tr><td>Bize yazdığın e-postalar</td><td>Soru, talep ve şikâyetlerinin yanıtlanması</td><td>Meşru menfaat (m. 5/2-f); KVKK başvurularında hukuki yükümlülük (m. 5/2-ç)</td></tr>
+    <tr><td>Google Play hata raporları</td><td>Hataların düzeltilmesi</td><td>Meşru menfaat (m. 5/2-f)</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Bilgiler, telefonundaki Google bileşenleri aracılığıyla otomatik yollarla
+toplanır. Açık rızaya dayanan işlemler için verdiğin izni istediğin zaman geri
+alabilirsin. Geri alman, o zamana kadar yapılan işlemleri etkilemez.</p>
+
+<h2 id="aktarim">5. Yurt dışına aktarım</h2>
+<p>Yukarıdaki Google hizmetlerini sunan şirketler (Google LLC, ABD; Google Ireland
+Limited, İrlanda) bilgileri Türkiye dışındaki sunucularda işleyebilir. Bu aktarım,
+açık rızanla açılan özelliklerde açık rızana; diğer durumlarda KVKK'nın 9. maddesinde
+öngörülen güvencelere dayanır. Google'ın sunduğu veri koruma koşulları ve
+taahhütleri bu güvencelerin bir parçasıdır.</p>
+
+<h2 id="saklama">6. Saklama süreleri</h2>
+<ul>
+  <li><strong>Telefonundaki bilgiler:</strong> sen silene, <em>Tüm verileri sıfırla</em>
+  diyene ya da Uygulamayı kaldırana kadar.</li>
+  <li><strong>Firebase Analytics:</strong> kullanıcı düzeyindeki veriler en fazla 2 ay.</li>
+  <li><strong>AdMob ve Google Play:</strong> Google'ın kendi saklama politikalarına göre.</li>
+  <li><strong>Sipariş bilgileri:</strong> vergi ve ticaret mevzuatının öngördüğü süreler boyunca.</li>
+  <li><strong>E-postaların:</strong> talebin sonuçlandıktan sonra en geç 1 yıl içinde
+  silinir. Yasal bir uyuşmazlık ya da başvuru sürüyorsa bu süre uzayabilir.</li>
+</ul>
+
+<h2 id="silme">7. Verilerini nasıl silersin?</h2>
+<ul>
+  <li><em>Profil → Ayarlar → Tüm verileri sıfırla</em>: telefonundaki bütün notları,
+  fotoğrafları, kayıtları, hatırlatıcıları ve ayarları siler. Google Play satın almaların
+  Google hesabına bağlı olduğu için silinmez.</li>
+  <li>Uygulamayı kaldırmak da telefonundaki bütün Uygulama verilerini siler.</li>
+  <li>Kullanım istatistiklerini durdurmak için <em>Kullanım istatistikleri</em>
+  anahtarını kapatabilirsin. Firebase'deki eski verilerin en fazla 2 ay içinde
+  kendiliğinden silinir.</li>
+  <li>Uygulamada hesap olmadığı için silinecek bir hesap da yoktur.</li>
+</ul>
+
+<h2 id="haklar">8. KVKK kapsamındaki hakların</h2>
+<p>KVKK'nın 11. maddesine göre şu haklara sahipsin:</p>
+<ol type="a">
+  <li>kişisel verilerinin işlenip işlenmediğini öğrenme,</li>
+  <li>işlenmişse buna ilişkin bilgi talep etme,</li>
+  <li>işlenme amacını ve bunların amacına uygun kullanılıp kullanılmadığını öğrenme,</li>
+  <li>yurt içinde ya da yurt dışında aktarıldığı üçüncü kişileri bilme,</li>
+  <li>eksik ya da yanlış işlenmişse düzeltilmesini isteme,</li>
+  <li>KVKK'nın 7. maddesindeki şartlar çerçevesinde silinmesini ya da yok edilmesini isteme,</li>
+  <li>düzeltme, silme ve yok etme işlemlerinin, verilerin aktarıldığı üçüncü kişilere bildirilmesini isteme,</li>
+  <li>verilerin yalnızca otomatik sistemlerle analiz edilmesi sonucu aleyhine bir sonuç çıkmasına itiraz etme,</li>
+  <li>kanuna aykırı işleme nedeniyle zarara uğramışsan zararın giderilmesini talep etme.</li>
+</ol>
+<p>Taleplerini <mark>[E-POSTA ADRESİ]</mark> adresine ya da Veri Sorumlusuna Başvuru
+Usul ve Esasları Hakkında Tebliğ'de sayılan diğer yollarla iletebilirsin. Talebini en
+geç 30 gün içinde ücretsiz olarak yanıtlarız. Yanıtımızdan memnun kalmazsan ya da
+süresinde yanıt alamazsan Kişisel Verileri Koruma Kurulu'na şikâyette bulunabilirsin.</p>
+<p class="note">Telefonundaki bilgiler bize gelmediği için bunları biz göremez, düzeltemez
+ya da silemeyiz; bunlar için yukarıdaki Uygulama içi yolları kullanabilirsin.
+Google'ın tuttuğu veriler için Google'ın sunduğu araçları da kullanabilirsin
+(ör. <a href="https://myaccount.google.com/data-and-privacy">Google Hesabı → Veri ve gizlilik</a>).</p>
+
+<h2 id="izinler">9. Uygulamanın kullandığı telefon izinleri</h2>
+<ul>
+  <li><strong>Bildirimler</strong> (isteğe bağlı): hatırlatıcılar ve sayaç uyarıları
+  için, yalnızca ilk hatırlatıcını kurarken sorulur. Bildirimler telefonda oluşturulur,
+  sunucudan gönderilmez.</li>
+  <li><strong>Alarmlar ve hatırlatıcılar</strong> (isteğe bağlı): sınav geri sayımı
+  bittiğinde, ekran kilitliyken de alarmın tam zamanında çalması için.</li>
+  <li><strong>Telefon açılınca çalışma:</strong> telefon yeniden başlatıldığında
+  kurduğun hatırlatıcıların yeniden zamanlanması için.</li>
+  <li><strong>Titreşim ve kısa süreli uyanık tutma:</strong> alarm ve bildirimlerin
+  zamanında çalabilmesi için.</li>
+  <li><strong>İnternet ve reklam kimliği:</strong> reklamlar, satın almalar, (izin
+  verirsen) istatistikler ve bağlantılar için.</li>
+  <li><strong>Fotoğraf ve kamera:</strong> Uygulama galerine toplu erişim izni istemez.
+  Fotoğrafı yalnızca sen seçtiğinde ya da çektiğinde, Android'in kendi fotoğraf seçicisi
+  ya da kamera uygulaması üzerinden alır ve telefonunda saklar.</li>
+</ul>
+
+<h2 id="cocuklar">10. Çocuklar</h2>
+<p>Uygulama sınavlara hazırlanan gençler ve yetişkinler içindir; 13 yaşından küçük
+çocuklara yönelik değildir. 13 yaşından küçük çocuklardan bilerek kişisel veri
+toplamayız. 18 yaşından küçüksen Uygulamayı velinin bilgisiyle kullanmanı ve izin
+penceresindeki seçimleri onunla birlikte yapmanı öneririz.</p>
+
+<h2 id="guvenlik">11. Güvenlik</h2>
+<p>Telefonundaki bilgiler Android'in uygulamalara ayırdığı korumalı klasörde
+saklanır; başka uygulamalar bunlara erişemez. Google hizmetleriyle iletişim şifreli
+(HTTPS) bağlantıyla yapılır. Hiçbir sistem tamamen risksiz değildir. Telefonunu ekran
+kilidiyle korumanı ve Android güncellemelerini yüklemeni öneririz.</p>
+
+<h2 id="degisiklik">12. Bu politikadaki değişiklikler</h2>
+<p>Uygulama değiştikçe bu politikayı güncelleyebiliriz. Güncel sürüm her zaman bu
+adreste yayımlanır ve yürürlük tarihi sayfanın başında yazar. Önemli bir değişiklik
+olursa (ör. yeni bir veri türü toplanması) bunu Uygulama içinde de duyurur, gerekirse
+iznini yeniden isteriz.</p>
+
+<footer>
+  <p>SınavGo, ÖSYM, öğretmenler, YouTube kanalları ya da yayınevleriyle resmî bir iş
+  birliği içinde değildir.</p>
+  <p>© 2026 Tombolo. Tüm hakları saklıdır.</p>
+</footer>
+</main>
+</body>
+</html>
